@@ -43,3 +43,8 @@ public class SwitchOffCommand implements Command {
         light.switchOff();
     }
 }
+
+
+
+
+

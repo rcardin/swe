@@ -23,33 +23,24 @@
  */
 package it.unipd.math.swe.patterns.command;
 
-import java.util.Arrays;
+import java.util.List;
 
 /**
- * The class that wants to operate on a light through remote control.
+ * Please, insert description here.
  *
  * @author Riccardo Cardin
  * @version 0.1
  * @since 0.1
  */
-public class Client {
-    public static void main(String[] args) {
-        final Light light = new Light();
-        final SwitchOnCommand switchOnCommand = new SwitchOnCommand(light);
-        final SwitchOffCommand switchOffCommand = new SwitchOffCommand(light);
-        final RemoteControl remoteControl = new RemoteControl();
+public class SexyEnvironmentCommand implements Command {
+    private List<Command> commands;
 
-        // The client can interact with many objects only using a single interface,
-        // the method pressButton.
+    public SexyEnvironmentCommand(List<Command> commands) {
+        this.commands = commands;
+    }
 
-        // Switch on the light
-        remoteControl.pressButton(switchOnCommand);
-        // Switch off the light
-        remoteControl.pressButton(switchOffCommand);
-
-        final SwitchOnRadioCommand switchOnRadioCommand = new SwitchOnRadioCommand();
-        final SexyEnvironmentCommand sexyEnvironmentCommand =
-                new SexyEnvironmentCommand(Arrays.asList(switchOffCommand, switchOnRadioCommand));
-        remoteControl.pressButton(sexyEnvironmentCommand);
+    @Override
+    public void execute() {
+        commands.forEach(Command::execute);
     }
 }
