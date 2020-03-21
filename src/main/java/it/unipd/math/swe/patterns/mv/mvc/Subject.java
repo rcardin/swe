@@ -1,4 +1,4 @@
-package it.unipd.math.swe.patterns.mv.mvc.nopattern;
+package it.unipd.math.swe.patterns.mv.mvc;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package it.unipd.math.swe.patterns.mv.mvc.nopattern;
+package it.unipd.math.swe.patterns.mv.mvc;
 
 /**
  * An ATM application. Available operation are deposit and withdraw. The MVC pattern shows how to solve this problem

@@ -1,4 +1,4 @@
-package it.unipd.math.swe.patterns.mv.mvc.nopattern;
+package it.unipd.math.swe.patterns.mv.mvc;
 
 import java.io.BufferedReader;
 import java.io.IOException;

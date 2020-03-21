@@ -1,4 +1,4 @@
-package it.unipd.math.swe.patterns.mv.mvc.nopattern;
+package it.unipd.math.swe.patterns.mv.mvc;
 
 /**
  * The Controller has the responsibility to map the information that comes from the presentation component to the
