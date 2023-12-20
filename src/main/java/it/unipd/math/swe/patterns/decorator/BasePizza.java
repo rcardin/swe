@@ -37,4 +37,9 @@ public class BasePizza implements Pizza {
     public List<String> ingredients() {
         return Collections.singletonList("pasta");
     }
+    
+    @Override
+    public int cookingTime() {
+        return 3;
+    }
 }

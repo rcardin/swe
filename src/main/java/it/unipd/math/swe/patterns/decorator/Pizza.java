@@ -38,4 +38,6 @@ public interface Pizza {
      * @return A list of ingredients
      */
     List<String> ingredients();
+    
+    int cookingTime();
 }

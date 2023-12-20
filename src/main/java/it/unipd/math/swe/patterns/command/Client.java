@@ -23,6 +23,7 @@
  */
 package it.unipd.math.swe.patterns.command;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -47,7 +48,7 @@ public class Client {
         // Switch off the light
         remoteControl.pressButton(switchOffCommand);
 
-        final SwitchOnRadioCommand switchOnRadioCommand = new SwitchOnRadioCommand();
+    final SwitchOnRadioCommand switchOnRadioCommand = new SwitchOnRadioCommand(new Radio());
         final SexyEnvironmentCommand sexyEnvironmentCommand =
                 new SexyEnvironmentCommand(Arrays.asList(switchOffCommand, switchOnRadioCommand));
         remoteControl.pressButton(sexyEnvironmentCommand);

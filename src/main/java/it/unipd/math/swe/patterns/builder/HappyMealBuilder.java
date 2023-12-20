@@ -47,7 +47,7 @@ public class HappyMealBuilder {
         return this;
     }
 
-    public HappyMeal createHappyMeal() {
+    public HappyMeal build() {
         Objects.nonNull(drink);
         Objects.nonNull(toy);
         Objects.nonNull(burger);

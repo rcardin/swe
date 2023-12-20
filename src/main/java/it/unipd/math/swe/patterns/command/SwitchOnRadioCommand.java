@@ -31,8 +31,15 @@ package it.unipd.math.swe.patterns.command;
  * @since 0.1
  */
 public class SwitchOnRadioCommand implements Command {
+
+    private final Radio radio;
+
+    public SwitchOnRadioCommand(Radio radio) {
+        this.radio = radio;
+    }
+
     @Override
     public void execute() {
-        System.out.println("Switch on the radio");
+        radio.switchOn();
     }
 }

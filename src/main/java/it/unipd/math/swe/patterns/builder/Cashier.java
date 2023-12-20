@@ -40,7 +40,7 @@ public class Cashier {
                 .withCake("Muffin")
                 .withFruit("Pineapple")
                 .withToy("Darth Vader")
-                .createHappyMeal();
+                .build();
     }
 
     public HappyMeal serveToyStoryHappyMealDefault() {
@@ -50,6 +50,6 @@ public class Cashier {
                 .withCake("Cheesecake")
                 .withFruit("Apple")
                 .withToy("Woody")
-                .createHappyMeal();
+                .build();
     }
 }

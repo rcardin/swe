@@ -23,7 +23,6 @@
  */
 package it.unipd.math.swe.patterns.decorator;
 
-import com.sun.corba.se.impl.interceptors.PICurrent;
 
 import java.util.List;
 
@@ -36,7 +35,7 @@ import java.util.List;
  */
 public class Pizzaiolo {
     public static void main(String[] args) {
-        Pizza viennese = new WurstelPizza(new TomatoPizza(new MozzarellaCheesePizza(new BasePizza())));
+        Pizza viennese = new LoggedPizza(new WurstelPizza(new TomatoPizza(new TomatoPizza(new MozzarellaCheesePizza(new BasePizza())))));
         Pizza margherita = new TomatoPizza(new MozzarellaCheesePizza(new BasePizza()));
         Pizza whitePizza = new MozzarellaCheesePizza(new BasePizza());
         System.out.println("Viennese pizza ingredients: " + mkString(viennese.ingredients()));

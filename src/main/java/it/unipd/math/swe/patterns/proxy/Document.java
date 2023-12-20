@@ -14,5 +14,6 @@ public class Document {
 
     public void show() {
         System.out.println("Showing the document");
+        videos.forEach(Video::reproduce);
     }
 }

@@ -46,7 +46,12 @@ public abstract class ToppedPizza implements Pizza {
     public List<String> ingredients() {
         return addIngredients(toDecorate.ingredients());
     }
-
+    
+    @Override
+    public int cookingTime() {
+        return toDecorate.cookingTime();
+    }
+    
     /**
      * Add ingredients after the list returned by {@link #toDecorate} pizza.
      * @param ingredients The original list of ingredients
